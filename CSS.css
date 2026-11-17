@@ -1,0 +1,122 @@
+/* Custom Emerald Green Theme Variables */
+:root {
+  --emerald-primary: #059669;
+  --emerald-dark: #047857;
+  --emerald-light: #d1fae5;
+  --emerald-subtle-bg: rgba(5, 150, 105, 0.12);
+}
+
+[data-bs-theme="dark"] {
+  --emerald-primary: #10b981;
+  --emerald-dark: #059669;
+  --emerald-subtle-bg: rgba(16, 185, 129, 0.18);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Emerald Utility Classes */
+.text-emerald {
+  color: var(--emerald-primary) !important;
+}
+
+.bg-emerald {
+  background-color: var(--emerald-primary) !important;
+}
+
+.bg-emerald-dark {
+  background-color: var(--emerald-dark) !important;
+}
+
+.bg-emerald-subtle {
+  background-color: var(--emerald-subtle-bg) !important;
+}
+
+.border-emerald {
+  border-color: var(--emerald-primary) !important;
+}
+
+.border-emerald-subtle {
+  border-color: rgba(5, 150, 105, 0.25) !important;
+}
+
+/* Custom Buttons */
+.btn-emerald {
+  background-color: var(--emerald-primary);
+  border-color: var(--emerald-primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-emerald:hover,
+.btn-emerald:focus {
+  background-color: var(--emerald-dark);
+  border-color: var(--emerald-dark);
+  color: #ffffff;
+}
+
+.btn-outline-emerald {
+  color: var(--emerald-primary);
+  border-color: var(--emerald-primary);
+  font-weight: 600;
+}
+
+.btn-outline-emerald:hover,
+.btn-outline-emerald:focus,
+.btn-outline-emerald.active {
+  background-color: var(--emerald-primary);
+  border-color: var(--emerald-primary);
+  color: #ffffff;
+}
+
+/* Visible Keyboard Focus for Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--emerald-primary) !important;
+  outline-offset: 2px;
+}
+
+/* Profile Frame */
+.profile-frame {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, var(--emerald-primary), var(--emerald-dark));
+}
+
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #ffffff;
+}
+
+/* Animated Skill Bars */
+.progress {
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  transition: width 1.1s ease-in-out;
+}
+
+/* Project Cards */
+.project-banner {
+  height: 150px;
+}
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}

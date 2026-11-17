@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Vincent F. Pamintuan | Personal Portfolio</title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-emerald" href="index.html">
+        <i class="bi bi-code-slash me-1"></i>JVP.Portfolio
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home / About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-outline-emerald btn-sm" type="button" aria-label="Toggle dark or light mode">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+              <span id="themeText" class="ms-1">Dark Mode</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero & About Section -->
+  <header class="py-5 hero-section">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-4 text-center">
+          <div class="profile-frame mx-auto shadow">
+            <!-- Replace src with assets/images/your-photo.jpg when ready -->
+            <img src="assets/images/profile-avatar.svg" alt="Portrait of James Vincent F. Pamintuan" class="img-fluid rounded-circle" />
+          </div>
+          <span class="badge bg-emerald-subtle text-emerald border border-emerald mt-3 px-3 py-2">
+            <i class="bi bi-mortarboard-fill me-1"></i>BSIT 2A • Polytechnic College of Botolan
+          </span>
+        </div>
+
+        <div class="col-lg-8">
+          <p class="text-emerald fw-semibold text-uppercase mb-1">Welcome to my portfolio</p>
+          <h1 class="display-5 fw-bold mb-3">James Vincent F. Pamintuan</h1>
+          <p class="lead mb-4">
+            <strong>Career Goal:</strong> To become a successful, aspiring IT professional while building practical digital solutions and Social Media Management (SMM) skills.
+          </p>
+          <blockquote class="blockquote border-start border-4 border-emerald ps-3 py-1 mb-4">
+            <p class="mb-0 fst-italic">"Focus on my goal and Love my family."</p>
+          </blockquote>
+
+          <!-- Personal Information Grid -->
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="p-3 rounded border bg-body-tertiary h-100">
+                <small class="text-body-secondary d-block">Age &amp; Birthday</small>
+                <strong>19 years old (December 1, 2006)</strong>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded border bg-body-tertiary h-100">
+                <small class="text-body-secondary d-block">Location</small>
+                <strong>San Marcelino, Zambales</strong>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded border bg-body-tertiary h-100">
+                <small class="text-body-secondary d-block">School &amp; Section</small>
+                <strong>Polytechnic College of Botolan — BSIT 2A</strong>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded border bg-body-tertiary h-100">
+                <small class="text-body-secondary d-block">Email &amp; Phone</small>
+                <strong>jamesvincentpamintuan@pcb.edu.ph</strong><br />
+                <span class="small">0951-285-315</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="d-flex flex-wrap gap-3">
+            <button type="button" class="btn btn-emerald btn-lg px-4" data-bs-toggle="modal" data-bs-target="#cvModal">
+              <i class="bi bi-file-earmark-person me-2"></i>View / Download CV
+            </button>
+            <a href="pages/contact.html" class="btn btn-outline-emerald btn-lg px-4">
+              <i class="bi bi-envelope-fill me-2"></i>Contact Me
+            </a>
+            <a href="pages/projects.html" class="btn btn-outline-secondary btn-lg px-4">
+              <i class="bi bi-folder2-open me-2"></i>Explore Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section with Scroll-Triggered Progress Bars -->
+  <section class="py-5 border-top" id="skillsSection">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Core Skills &amp; Strengths</h2>
+        <p class="text-body-secondary">Key abilities I apply to academics, web development, and freelance social media tasks.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-emerald-subtle">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-3 text-emerald"><i class="bi bi-lightning-charge-fill me-2"></i>Work Ethic &amp; Productivity</h3>
+              
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">Multitasking &amp; Time Management</span>
+                  <span class="fw-bold text-emerald">95%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Multitasking skill level" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-emerald skill-bar" data-width="95%" style="width: 0%;"></div>
+                </div>
+                <small class="text-body-secondary">Balancing BSIT coursework, project deadlines, and client communication smoothly.</small>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">Social Media Management (SMM)</span>
+                  <span class="fw-bold text-emerald">85%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Social Media Management skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-emerald skill-bar" data-width="85%" style="width: 0%;"></div>
+                </div>
+                <small class="text-body-secondary">Content scheduling, audience engagement, and Facebook page growth strategies.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-emerald-subtle">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-3 text-emerald"><i class="bi bi-laptop me-2"></i>Technical &amp; Creative Skills</h3>
+
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">HTML5, CSS3 &amp; Bootstrap 5</span>
+                  <span class="fw-bold text-emerald">88%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="HTML CSS Bootstrap skill level" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-emerald skill-bar" data-width="88%" style="width: 0%;"></div>
+                </div>
+                <small class="text-body-secondary">Building clean, mobile-first, accessible interfaces.</small>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">JavaScript (DOM &amp; Interactive UI)</span>
+                  <span class="fw-bold text-emerald">80%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-emerald skill-bar" data-width="80%" style="width: 0%;"></div>
+                </div>
+                <small class="text-body-secondary">Form validation, dynamic filtering, and localStorage persistence.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Preview & Download Modal -->
+  <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-emerald text-white">
+          <h5 class="modal-title" id="cvModalLabel"><i class="bi bi-file-earmark-text me-2"></i>Curriculum Vitae — James Vincent F. Pamintuan</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="cvPrintableArea">
+          <h4 class="fw-bold mb-1">James Vincent F. Pamintuan</h4>
+          <p class="text-body-secondary mb-3">San Marcelino, Zambales • 0951-285-315 • jamesvincentpamintuan@pcb.edu.ph</p>
+          <hr />
+          <h6 class="fw-bold text-emerald text-uppercase">Career Objective</h6>
+          <p>To become a successful, aspiring IT professional while delivering reliable web development, multitasking coordination, and social media management support.</p>
+          <h6 class="fw-bold text-emerald text-uppercase">Education</h6>
+          <p class="mb-3"><strong>Bachelor of Science in Information Technology (BSIT 2A)</strong><br />Polytechnic College of Botolan — Botolan, Zambales (2nd Year Student)</p>
+          <h6 class="fw-bold text-emerald text-uppercase">Core Competencies</h6>
+          <ul class="mb-0">
+            <li>Strong Multitasking &amp; Deadline Coordination</li>
+            <li>Frontend Web Development (HTML5, CSS3, Bootstrap 5, JavaScript)</li>
+            <li>Social Media Management &amp; Digital Content Planning</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-emerald" id="downloadCvBtn">
+            <i class="bi bi-download me-1"></i>Download CV (.txt)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top bg-body-tertiary mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 small text-body-secondary">&copy; 2026 James Vincent F. Pamintuan (BSIT 2A). All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="https://www.facebook.com/search/top?q=James%20Pamintuan" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-emerald small">
+          <i class="bi bi-facebook me-1"></i>James Pamintuan
+        </a>
+        <a href="mailto:jamesvincentpamintuan@pcb.edu.ph" class="text-decoration-none text-emerald small">
+          <i class="bi bi-envelope me-1"></i>Email
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

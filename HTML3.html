@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | James Vincent F. Pamintuan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-emerald" href="../index.html">
+        <i class="bi bi-code-slash me-1"></i>JVP.Portfolio
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home / About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-outline-emerald btn-sm" type="button" aria-label="Toggle dark or light mode">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+              <span id="themeText" class="ms-1">Dark Mode</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Projects Section -->
+  <main class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge bg-emerald-subtle text-emerald border border-emerald mb-2">Portfolio Showcase</span>
+        <h1 class="fw-bold">My Sample &amp; Academic Projects</h1>
+        <p class="text-body-secondary mx-auto" style="max-width: 650px;">
+          Filter through sample projects across Web Development, Graphic Design, and Social Media Management. Click any card's button to view full project details.
+        </p>
+      </div>
+
+      <!-- Interactive Category Filter Buttons -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" role="group" aria-label="Filter projects by category">
+        <button type="button" class="btn btn-emerald filter-btn active" data-filter="all">All Projects</button>
+        <button type="button" class="btn btn-outline-emerald filter-btn" data-filter="web">Web</button>
+        <button type="button" class="btn btn-outline-emerald filter-btn" data-filter="design">Design</button>
+        <button type="button" class="btn btn-outline-emerald filter-btn" data-filter="social-media">Social Media</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="row g-4" id="projectsGrid">
+        <!-- Project 1: Web -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-img-top project-banner bg-emerald text-white d-flex align-items-center justify-content-center">
+              <i class="bi bi-globe2 display-4"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-emerald-subtle text-emerald">Web</span>
+                <small class="text-body-secondary">HTML • Bootstrap • JS</small>
+              </div>
+              <h2 class="h5 card-title fw-bold">PCB Student Study Planner</h2>
+              <p class="card-text text-body-secondary flex-grow-1">
+                A responsive task tracker designed for BSIT students to organize deadlines, subjects, and multitasking schedules.
+              </p>
+              <button type="button" class="btn btn-outline-emerald w-100 mt-3 view-details-btn"
+                data-title="PCB Student Study Planner"
+                data-category="Web Development"
+                data-tools="HTML5, CSS3, Bootstrap 5, JavaScript (localStorage)"
+                data-description="Built to demonstrate strong multitasking organization. Allows students to add, prioritize, and filter daily school tasks with browser storage persistence."
+                data-outcome="Improved task tracking workflow and responsive layout across mobile and desktop screens.">
+                <i class="bi bi-eye me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Social Media -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="social-media">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-img-top project-banner bg-dark text-white d-flex align-items-center justify-content-center">
+              <i class="bi bi-megaphone-fill display-4 text-emerald"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-emerald-subtle text-emerald">Social Media</span>
+                <small class="text-body-secondary">SMM • Content Calendar</small>
+              </div>
+              <h2 class="h5 card-title fw-bold">Local Cafe Facebook Growth Plan</h2>
+              <p class="card-text text-body-secondary flex-grow-1">
+                A 30-day Facebook content calendar, caption copywriting, and engagement schedule for a small Zambales business.
+              </p>
+              <button type="button" class="btn btn-outline-emerald w-100 mt-3 view-details-btn"
+                data-title="Local Cafe Facebook Growth Plan"
+                data-category="Social Media Management (SMM)"
+                data-tools="Meta Business Suite, Content Calendar, Copywriting"
+                data-description="Planned daily promotional posts, interactive polls, and peak-hour scheduling to boost local customer inquiries."
+                data-outcome="Sample SMM campaign blueprint demonstrating consistent posting and audience engagement.">
+                <i class="bi bi-eye me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Design -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="design">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-img-top project-banner bg-emerald-dark text-white d-flex align-items-center justify-content-center">
+              <i class="bi bi-palette-fill display-4"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-emerald-subtle text-emerald">Design</span>
+                <small class="text-body-secondary">UI/UX • Brand Kit</small>
+              </div>
+              <h2 class="h5 card-title fw-bold">Eco-Tech Brand Identity Kit</h2>
+              <p class="card-text text-body-secondary flex-grow-1">
+                A clean emerald-themed visual identity system featuring typography rules, social media post templates, and UI buttons.
+              </p>
+              <button type="button" class="btn btn-outline-emerald w-100 mt-3 view-details-btn"
+                data-title="Eco-Tech Brand Identity Kit"
+                data-category="Graphic & UI Design"
+                data-tools="Canva, Figma Wireframing, Color Accessibility"
+                data-description="Created cohesive visual guidelines focusing on high-contrast emerald green accents, legible typography, and reusable post layouts."
+                data-outcome="Delivers a unified brand look across websites and Facebook promotional banners.">
+                <i class="bi bi-eye me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Web -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-img-top project-banner bg-secondary text-white d-flex align-items-center justify-content-center">
+              <i class="bi bi-calculator-fill display-4"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-emerald-subtle text-emerald">Web</span>
+                <small class="text-body-secondary">JavaScript • Forms</small>
+              </div>
+              <h2 class="h5 card-title fw-bold">Freelance SMM Rate Estimator</h2>
+              <p class="card-text text-body-secondary flex-grow-1">
+                An interactive frontend calculator helping freelance clients estimate monthly social media management packages.
+              </p>
+              <button type="button" class="btn btn-outline-emerald w-100 mt-3 view-details-btn"
+                data-title="Freelance SMM Rate Estimator"
+                data-category="Web Development"
+                data-tools="HTML5, Bootstrap Grid, JavaScript DOM"
+                data-description="Allows prospective clients to select posts per week, graphic design add-ons, and page moderation to see instant pricing."
+                data-outcome="Streamlines client onboarding and showcases practical JavaScript interactivity.">
+                <i class="bi bi-eye me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Social Media -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="social-media">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-img-top project-banner bg-emerald text-white d-flex align-items-center justify-content-center">
+              <i class="bi bi-graph-up-arrow display-4"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-emerald-subtle text-emerald">Social Media</span>
+                <small class="text-body-secondary">Analytics • Hashtags</small>
+              </div>
+              <h2 class="h5 card-title fw-bold">Page Engagement Audit Sample</h2>
+              <p class="card-text text-body-secondary flex-grow-1">
+                A structured breakdown of reach, post timing, and call-to-action improvements for community pages.
+              </p>
+              <button type="button" class="btn btn-outline-emerald w-100 mt-3 view-details-btn"
+                data-title="Page Engagement Audit Sample"
+                data-category="Social Media Management (SMM)"
+                data-tools="Page Insights, Hashtag Research, Content Strategy"
+                data-description="Evaluated post formats (reels, carousels, infographics) to identify which content drives higher comments and shares."
+                data-outcome="Provides actionable recommendations for improving organic page visibility.">
+                <i class="bi bi-eye me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Design -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="design">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-img-top project-banner bg-dark text-white d-flex align-items-center justify-content-center">
+              <i class="bi bi-phone-fill display-4 text-emerald"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-emerald-subtle text-emerald">Design</span>
+                <small class="text-body-secondary">Social Banners • Canva</small>
+              </div>
+              <h2 class="h5 card-title fw-bold">Promotional Carousel Pack</h2>
+              <p class="card-text text-body-secondary flex-grow-1">
+                A set of 5 swipeable social media carousel graphics designed for service announcements and student events.
+              </p>
+              <button type="button" class="btn btn-outline-emerald w-100 mt-3 view-details-btn"
+                data-title="Promotional Carousel Pack"
+                data-category="Graphic & UI Design"
+                data-tools="Canva, Visual Hierarchy, Mobile Framing"
+                data-description="Designed clean multi-slide graphics with clear headlines, strong emerald contrast, and direct call-to-action slides."
+                data-outcome="Ready-to-publish visual templates tailored for mobile social feeds.">
+                <i class="bi bi-eye me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-emerald text-white">
+          <h5 class="modal-title" id="projectModalTitle">Project Title</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-2"><strong>Category:</strong> <span id="projectModalCategory" class="badge bg-emerald-subtle text-emerald"></span></p>
+          <p class="mb-3"><strong>Tools Used:</strong> <span id="projectModalTools" class="text-body-secondary"></span></p>
+          <h6 class="fw-bold">Overview</h6>
+          <p id="projectModalDescription"></p>
+          <h6 class="fw-bold">Key Outcome</h6>
+          <p id="projectModalOutcome" class="mb-0"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-emerald">Inquire About Similar Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top bg-body-tertiary mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 small text-body-secondary">&copy; 2026 James Vincent F. Pamintuan (BSIT 2A). All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="https://www.facebook.com/search/top?q=James%20Pamintuan" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-emerald small">
+          <i class="bi bi-facebook me-1"></i>James Pamintuan
+        </a>
+        <a href="mailto:jamesvincentpamintuan@pcb.edu.ph" class="text-decoration-none text-emerald small">
+          <i class="bi bi-envelope me-1"></i>Email
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
